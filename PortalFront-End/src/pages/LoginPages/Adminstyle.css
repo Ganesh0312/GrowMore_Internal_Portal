@@ -1,0 +1,111 @@
+
+.main-container{
+    border: 1px solid red;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   /* background-image: linear-gradient(hsla(245, 66%, 36%, 0.004),rgba(53, 54, 61, 0.65)),url(img/Waterman-Caribbean-Park-Private-Offices.webp); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: aliceblue;
+   color: black;
+}
+.child-container{
+    padding: 20px;
+    border: 1px solid rgb(198, 198, 237);
+    margin: auto;
+   width: 30%;
+  background: transparent;
+ margin-top: 8%;
+ box-shadow: 2px 2px 5px  rgb(35, 39, 49);
+
+}
+.child-container:hover{
+    box-shadow: 2px 2px 7px  rgb(233, 231, 237);
+    transform: scale(1.1);
+    transition: 0.5s;
+ }
+.logo{
+    border: 1px solid pink;
+    margin-top: 20px;
+    height: 70px;
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 50px;
+     margin-left: 40%;
+     background-color: rgb(31, 31, 57);
+}
+.logo i{
+    margin-top: 10px;
+    margin-left: 5px;
+    color: azure;
+}
+h1{
+    text-align: center;
+    font-size: large;
+}
+label{
+    font-size: 16px;
+    font-weight: 200;
+    /* color: white; */
+}
+.row1{
+
+width: 100%;
+margin-top: 10px;
+
+
+}
+.col1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.col2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-field{
+padding: 10px;
+border-radius: 20px;
+width: 70%;
+border: none;
+outline: none;
+font-size: 15px;
+background: rgba(241, 239, 239, 0.463);
+color: black;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+::-webkit-input-placeholder{
+    color: white  ;
+}
+    .btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+   
+}
+
+.btn1{
+    width: 120px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 150;
+    background: rgba(241, 239, 239, 0.463);
+    border-style: none;
+
+   
+}
+
+button:hover{
+   border-color: white;
+    background-color: orangered;
+    transition: 1s;
+    color: white;
+   
+
+}
