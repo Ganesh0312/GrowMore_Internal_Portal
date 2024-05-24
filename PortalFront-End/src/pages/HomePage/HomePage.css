@@ -1,0 +1,18 @@
+
+.background-image {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_fm2dAkSr99I9HNX3YCrCuJhuVbQFnMfTg&s);
+    background-size: cover;
+    background-position: center;
+    height: vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section:hover{
+    transform: scale(1.1);
+}
+
+.card-login:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
