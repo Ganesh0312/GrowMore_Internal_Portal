@@ -1,39 +1,40 @@
 import { Link } from "react-router-dom";
-
+import './Sidebar.css'
 const Sidebar = ({ isSidebarOpen }) => {
   return (
     <>
       <aside
         id="logo-sidebar"
-        className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform ${
+        className={`fixed top-0 left-0 z-40 w-56 h-screen pt-20 transition-transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700`}
+        } border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700`}
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+        <div className=" sidebarbody h-full px-3 pb-4 overflow-y-auto  dark:bg-gray-800">
           <ul className="space-y-2 font-medium">
+         
             <li>
               <Link
                 to="/admin/dashboard"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className=" sidebarlink1 flex items-center p-2  rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group "
               >
                 <svg
-                  className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="w-5 h-5 text-white transition  dark:text-gray-400  dark:group-hover:text-white "
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
+                  fill=" white"
                   viewBox="0 0 22 21"
                 >
                   <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
                   <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                 </svg>
-                <span className="ms-3">Dashboard</span>
+                <span className="ms-3  ">Dashboard</span>
               </Link>
             </li>
             <li>
               <Link
                 to="/admin/students"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className=" sidebarlink2 flex items-center p-2 text-white  rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +58,7 @@ const Sidebar = ({ isSidebarOpen }) => {
             <li>
               <Link
                 to="/admin/Trainer"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className=" sidebarlink3 flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
                   className="w-6 h-6 text-gray-800 dark:text-white"
@@ -81,7 +82,7 @@ const Sidebar = ({ isSidebarOpen }) => {
             <li>
               <Link
                 to="/admin/students"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className=" sidebarlink4 flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
                   fill="#000000"
@@ -116,43 +117,24 @@ const Sidebar = ({ isSidebarOpen }) => {
                 <span className="flex-1 ms-3 whitespace-nowrap">Fees</span>
               </Link>
             </li>
+
             <li>
               <Link
-                to="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                to="/home"
+                className=" sidebarlink4 flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    {" "}
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.25 5.25L9 4.5H18L18.75 5.25V18.75L18 19.5H9L8.25 18.75V16.5H9.75V18H17.25V6H9.75V7.5H8.25V5.25Z"
-                      fill="#080341"
-                    ></path>
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M7.06068 12.7499L14.25 12.7499L14.25 11.2499L7.06068 11.2499L8.78035 9.53027L7.71969 8.46961L4.18936 11.9999L7.71969 15.5303L8.78035 14.4696L7.06068 12.7499Z"
-                      fill="#080341"
-                    ></path>{" "}
-                  </g>
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Logout</span>
+               <svg  height="24px"
+                  width="24px" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.127 29.128" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M22.471,15.103c0,1.021,0.824,1.847,1.849,1.847c1.021,0,1.845-0.826,1.845-1.847c0-1.021-0.824-1.847-1.845-1.847 C23.295,13.254,22.471,14.081,22.471,15.103z"></path> 
+                <path d="M21.66,20.878c0,1.465,1.19,2.657,2.659,2.657c1.463,0,2.654-1.192,2.654-2.657c0-1.468-1.191-2.659-2.654-2.659 C22.85,18.219,21.66,19.41,21.66,20.878z"></path> <polygon points="27.485,24.576 25.344,23.932 24.364,25.107 23.352,23.932 21.004,24.576 21.004,29.056 27.633,29.056 "></polygon> <path d="M14.808,18.293c-1.467,0-2.659,1.191-2.659,2.658c0,1.465,1.192,2.657,2.659,2.657c1.466,0,2.656-1.192,2.656-2.657 C17.463,19.485,16.272,18.293,14.808,18.293z"></path> 
+                <polygon points="15.835,24.006 14.852,25.183 13.842,24.006 11.494,24.65 11.494,29.128 18.124,29.128 17.975,24.65 "></polygon> <circle cx="19.487" cy="17.242" r="1.944"></circle> <path d="M21.91,23.107c-0.347-0.654-0.588-1.364-0.588-2.156c0-0.521,0.141-1.005,0.298-1.474H21.43h-0.473h-0.723l-0.717,0.86 l-0.739-0.86h-0.761h-0.424c0.196,0.455,0.31,0.952,0.31,1.472c0,0.855-0.3,1.638-0.794,2.278h4.803L21.91,23.107z"></path> <circle cx="6.152" cy="10.675" r="3.732"></circle>
+                 <polygon points="14.664,12.543 9.908,14.967 7.51,14.967 6.089,16.617 4.711,14.967 1.703,15.612 1.495,22.236 2.775,22.236 2.826,23.264 9.576,23.264 9.903,16.904 15.242,14.289 "></polygon>
+                <path d="M13.141,8.3l-1.498,2.234l0.581-0.046c0.04-0.004,3.914-0.328,6.596-0.923c3.521-0.778,5.616-2.336,5.755-4.273 c0.186-2.635-2.781-4.998-6.612-5.267c-3.83-0.27-7.097,1.654-7.282,4.289C10.575,5.807,11.49,7.281,13.141,8.3z M17.924,0.586 c3.521,0.248,6.254,2.341,6.088,4.667c-0.166,2.373-3.771,3.423-5.312,3.764c-2.027,0.449-4.753,0.743-5.935,0.857l1.178-1.76 L13.68,7.965c-1.622-0.913-2.534-2.265-2.44-3.612C11.406,2.028,14.402,0.339,17.924,0.586z"></path> </g> </g> </g></svg>
+
+                <span className="flex-1 ms-3 whitespace-nowrap">Batch</span>
               </Link>
             </li>
+           
           </ul>
         </div>
       </aside>

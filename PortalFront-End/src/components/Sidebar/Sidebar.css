@@ -1,0 +1,33 @@
+#logo-sidebar{
+  background-color:rgb(2, 4, 99); 
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 3px rgb(73, 73, 78);
+ 
+}
+
+.sidebarlink1:hover svg,
+.sidebarlink2:hover svg,
+.sidebarlink3:hover svg,
+.sidebarlink4:hover svg {
+  fill: black; /* Change icon color to black on hover */
+}
+.sidebarlink1:hover span,
+.sidebarlink2:hover span,
+.sidebarlink3:hover span,
+.sidebarlink4:hover span {
+  color: black; /* Change text color to black on hover */
+}
+.sidebarlink1 svg,
+.sidebarlink2 svg,
+.sidebarlink3 svg,
+.sidebarlink4 svg {
+  fill: white; /* Set default icon color to white */
+}
+
+.sidebarlink1 span,
+.sidebarlink2 span,
+.sidebarlink3 span,
+.sidebarlink4 span {
+  color: white; /* Set default text color to white */
+}
+

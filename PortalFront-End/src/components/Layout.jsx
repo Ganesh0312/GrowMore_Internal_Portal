@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       <Sidebar isSidebarOpen={isSidebarOpen} />
       <div className={`p-4 ${isSidebarOpen ? "sm:ml-64" : ""} transition-all`}>
         <div className="p-4 sm:ml-64">
-          <div className="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700 mt-14">
+          <div className="p-4 border-2 border-blue-600 rounded-lg dark:border-gray-700 mt-14">
             {children}
           </div>
         </div>
